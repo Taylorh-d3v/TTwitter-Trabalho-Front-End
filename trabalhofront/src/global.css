@@ -1,1 +1,29 @@
-@import "tailwindcss"
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme{
+  /*----cores----*/
+  --color-nblack: #181B24;
+  --color-dkblack: #14161D;
+  --color-lgblack: #484848;
+  --color-lwhite: #F2F2F2;
+  --color-dcyan: #105F74;
+  /*----fontes----*/
+  --font-inter: "Inter";
+
+
+
+
+}
+
+@layer base{
+  body{
+    @apply bg-nblack w-dvw h-dvh font-inter font-normal
+  }
+  input{
+    @apply focus:outline-none text-base
+  }
+  a{
+    @apply text-blue-500
+  }
+}
