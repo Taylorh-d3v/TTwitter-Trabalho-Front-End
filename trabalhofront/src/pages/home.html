@@ -6,13 +6,94 @@
     <title>Document</title>
     <link rel="stylesheet" href="../global.css">
 </head>
-<body>
-    <header class="flex items-center gap-24 bg-dkblack h-24 px-10">
-        <img src="../assets/logott.svg" alt="Logo do site">
-        <div class="flex justify-between w-2xl bg-lgblack/20 rounded-3xl px-4 py-1 text-white/20">
-            <input type="search" placeholder="Buscar" class="w-full">
-            <img src="../assets/busca.svg" alt="Ícone de busca">
-        </div>
+<body class="h-fit max-w-full">
+    <header class="flex items-center gap-4 md:gap-10 bg-dkblack h-20 px-5 md:px-10">
+        <img src="../assets/logott.svg" alt="Logo do site" class="w-auto">
+            <div class="flex justify-between w-full bg-lgblack/20 rounded-3xl px-4 py-1 text-white/20  ">
+                <input type="search" placeholder="Buscar" class="w-full">
+                <img src="../assets/busca.svg" alt="Ícone de busca">
+            </div>
+
     </header>
+    
+    <main class="flex flex-col gap-10 md:flex-row-reverse md:justify-between md:py-10 md:px-10 md:gap-1">
+        <section class="">
+            <h1 class="text-2xl p-4 md:hidden">Talvez você conheça</h1>
+            <h1 class="text-2xl py-2 hidden md:flex">Pessoas que você talvez conheça</h1>
+            <div class="flex justify-around md:flex-col md:gap-3">
+                <div class="md:flex md:items-center md:gap-5">
+                    <img src="../assets/foto.png" alt="Foto de usuário" id="p1">
+                    <label for="p1" class="relative right-2 md:left-">@usuario</label>
+                    <div class="hidden md:flex justify-end w-full">
+                        <button class=" text-bttnblue bg-bttnblack py-2 px-3 rounded-2xl">Adicionar</button>
+                    </div>
+                    
+                </div>
+                <div class="md:flex md:items-center md:gap-5">
+                    <img src="../assets/foto.png" alt="Foto de usuário" id="p2">
+                    <label for="p2" class="relative right-2">@usuario</label>
+                    <div class="hidden md:flex justify-end w-full">
+                        <button class=" text-bttnblue bg-bttnblack py-2 px-3 rounded-2xl">Adicionar</button>
+                    </div>
+                </div>
+                <div class="md:flex md:items-center md:gap-5">
+                    <img src="../assets/foto.png" alt="Foto de usuário" id="p3">
+                    <label for="p3" class="relative right-2">@usuario</label>
+                    <div class="hidden md:flex justify-end w-full">
+                        <button class=" text-bttnblue bg-bttnblack py-2 px-3 rounded-2xl">Adicionar</button>
+                    </div>
+                </div>
+                <div class="md:flex md:items-center md:gap-5">
+                    <img src="../assets/foto.png" alt="Foto de usuário" id="p4">
+                    <label for="p4" class="relative right-2">@usuario</label>
+                    <div class="hidden md:flex justify-end w-full">
+                        <button class=" text-bttnblue bg-bttnblack py-2 px-3 rounded-2xl">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col gap-10 px-8">
+            <div class="flex flex-col border p-4 rounded-xl border-lgblack gap-8">
+                <p class="text-[0.75rem] md:text-base">No que está pensando...?</p>
+                <div class="flex gap-2">
+                    <img src="../assets/imagem.svg" alt="Ícone de imagem">
+                    <img src="../assets/emoji.svg" alt="Ícone de emoji">
+                    <img src="../assets/ic_outline-link.svg" alt="Ícone de emoji">
+                    <div class="flex justify-end w-full">
+                        <button class="bg-pblue px-4 py-2 rounded-2xl text-black font-semibold">Postar</button>
+                    </div>
+                </div>   
+            </div>
+                
+            <div class="flex flex-col gap-2 p-10 border border-lgblack rounded-2xl">
+                <img src="../assets/post.png" alt="Imagem do post">
+                <div class="flex justify-between">
+                    <div class="flex">
+                        <img src="../assets/foto.png" alt="Foto de usuário" id="p5" class="w-6">
+                        <label for="p5" class="text-[0.75rem] relative top-0.5">@usuario</label>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <img src="../assets/comentar.svg" alt="Ícone de comentar" class="w-6">
+                        <img src="../assets/like.svg" alt="Ícone de curtir" class="w-6">
+                        <img src="../assets/coracao.svg" alt="Ícone de coração" class="w-6">
+                    </div>
+                </div>
+                <p class="text-center">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+            </div>
+        </section>
+
+        <section class="bg-dkblack px-12 h-20 md:h-full md:bg-nblack md:px-0">
+            <div class="flex justify-around items-center h-full md:flex-col md:gap-5">
+                <img src="../assets/home.svg" alt="Ícone home">
+                <img src="../assets/sino.svg" alt="Ícone notificação">
+                <img src="../assets/chat.svg" alt="Ícone chat">
+                <img src="../assets/engrenagem.svg" alt="Ícone configuração">
+            </div>
+        </section>
+    </main>
+
+
 </body>
 </html>

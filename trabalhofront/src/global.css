@@ -8,6 +8,9 @@
   --color-lgblack: #484848;
   --color-lwhite: #F2F2F2;
   --color-dcyan: #105F74;
+  --color-pblue: #22A2F2;
+  --color-bttnblue: #22A2F2;
+  --color-bttnblack: #222;
   /*----fontes----*/
   --font-inter: "Inter";
 
@@ -18,7 +21,10 @@
 
 @layer base{
   body{
-    @apply bg-nblack w-dvw h-dvh font-inter font-normal
+    @apply bg-nblack w-dvw h-dvh font-inter font-normal 
+  }
+  section{
+    @apply text-white
   }
   input{
     @apply focus:outline-none text-base
