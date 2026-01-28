@@ -24,6 +24,6 @@
     @apply focus:outline-none text-base
   }
   a{
-    @apply text-blue-500
+    @apply text-dcyan
   }
 }
