@@ -7,10 +7,10 @@
     <title>trabalhofront</title>
     <link rel="stylesheet" href="src/global.css">
   </head>
-  <body class="flex items-center p-44 justify-between gap-20">
+  <body class="flex flex-col-reverse gap-10 md:flex-row items-center p-8 md:p-44 md:justify-around h-fit">
     
-    <main class="bg-lwhite w-xl p-12 flex flex-col items-center rounded-3xl">
-      <h1 class="font-bold text-2xl pb-12">Cadastro</h1>
+    <main class="bg-lwhite w-full md:w-xl p-6 md:p-12 flex flex-col items-center rounded-3xl ">
+      <h1 class="font-bold text-[1.25rem] pb-6 md:text-2xl md:pb-12">Cadastro</h1>
       
       <form class="gap-7 h-full w-full flex flex-col">
 
@@ -31,9 +31,9 @@
         <div class="border p-3.5 w-full rounded-md">
           <input type="text" name="" id="" placeholder="******">
         </div>
-        <div class="flex gap-2 p-3">
-          <input type="checkbox" name="" id=""> 
-          <p className="self-center">Li e estou de acordo com os <a href=''>Termos</a> e <a href=''>Condições de uso.</a></p>
+        <div class="inline-flex gap-2 p-3">
+          <input type="checkbox" name="" id="" class=""> 
+          <p class="self-center text-[0.75rem]">Li e estou de acordo com os <a href=''>Termos</a> e <a href=''>Condições de uso.</a></p>
         </div>
 
         <a href="src/pages/home.html"><input type="button" value="Cadastrar" class="bg-dcyan text-lwhite w-full h-12 rounded-lg font-bold"></a>
@@ -45,7 +45,7 @@
       
       
     </main>
-    <img src="src/assets/logott.svg" alt="Logo do site" class="w-72">
+    <img src="src/assets/logott.svg" alt="Logo do site" class="w-auto md:min-w-50">
   
 
   </body>
