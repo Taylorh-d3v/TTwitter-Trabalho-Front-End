@@ -4,36 +4,42 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>trabalhofront</title>
+    <title>TTwitter</title>
     <link rel="stylesheet" href="src/global.css">
   </head>
-  <body class="flex flex-col-reverse gap-10 md:flex-row items-center p-8 md:p-44 md:justify-around h-fit">
+  <body class="flex flex-col-reverse gap-10 md:flex-row items-center p-8 md:p-25 lg:p-44 md:justify-around h-fit">
     
     <main class="bg-lwhite w-full md:w-xl p-6 md:p-12 flex flex-col items-center rounded-3xl ">
       <h1 class="font-bold text-[1.25rem] pb-6 md:text-2xl md:pb-12">Cadastro</h1>
       
       <form class="gap-7 h-full w-full flex flex-col">
 
-        <div class="border p-3.5 w-full rounded-md">
-          <input type="text" name="" id="" placeholder="nome de usuário" >
+        <div class="relative border p-3.5 w-full rounded-md">
+          <label for="nome" class="absolute left-3 bottom-11 bg-lwhite px-2">Nome</label>
+          <input type="text" name="" id="nome" placeholder="nome de usuário" class="w-full">
         </div>  
         
-        <div class="border p-3.5 w-full rounded-md">
- 
-          <input type="email" name="" id="" placeholder="example@email.com">
+        <div class="relative border p-3.5 w-full rounded-md">
+          <label for="email" class="absolute left-3 bottom-11 bg-lwhite px-2">Email</label>
+          <input type="email" name="" id="email" placeholder="example@email.com" class="w-full">
         </div>
-        <div class="border p-3.5 w-full rounded-md">
-          <input type="text" name="" id="" placeholder="xx/xx/xx">
+        <div class="relative border p-3.5 w-full rounded-md">
+          <label for="nascimento" class="absolute left-3 bottom-11 bg-lwhite px-2">Data de nascimento</label>
+          <input type="text" name="" id="nascimento" placeholder="xx/xx/xx" class="w-full">
         </div>
-        <div class="border p-3.5 w-full rounded-md">
-          <input type="text" name="" id="" placeholder="******">
+        <div class="flex justify-between relative border p-3.5 w-full rounded-md">
+          <label for="senha" class="absolute left-3 bottom-11 bg-lwhite px-2">Senha</label>
+          <input type="password" name="" id="senha" placeholder="******" class="w-full">
+          <img src="src/assets/olho.svg" alt="visibilidade">
         </div>
-        <div class="border p-3.5 w-full rounded-md">
-          <input type="text" name="" id="" placeholder="******">
+        <div class="flex justify-between relative border p-3.5 w-full rounded-md">
+          <label for="confirmar senha" class="absolute left-3 bottom-11 bg-lwhite px-2">Confirmar senha</label>
+          <input type="password" name="" id="confirmar senha" placeholder="******" class="w-full">
+          <img src="src/assets/olho.svg" alt="visibilidade">
         </div>
         <div class="inline-flex gap-2 p-3">
           <input type="checkbox" name="" id="" class=""> 
-          <p class="self-center text-[0.75rem]">Li e estou de acordo com os <a href=''>Termos</a> e <a href=''>Condições de uso.</a></p>
+          <p class="self-center">Li e estou de acordo com os <a href=''>Termos</a> e <a href=''>Condições de uso.</a></p>
         </div>
 
         <a href="src/pages/home.html"><input type="button" value="Cadastrar" class="bg-dcyan text-lwhite w-full h-12 rounded-lg font-bold hover:bg-bttncyanhvr"></a>
@@ -45,7 +51,7 @@
       
       
     </main>
-    <img src="src/assets/logott.svg" alt="Logo do site" class="w-auto md:min-w-50">
+    <img src="src/assets/logott.svg" alt="Logo do site" class="md:w-60 lg:w-xs">
   
 
   </body>

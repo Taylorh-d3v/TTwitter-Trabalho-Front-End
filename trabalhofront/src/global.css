@@ -34,4 +34,7 @@
   a{
     @apply text-dcyan
   }
+  label{
+    @apply text-[0.75rem]
+  }
 }
